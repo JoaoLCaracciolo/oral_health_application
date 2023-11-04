@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="finalizaOSevenVM" type="com.oralhealthapplication.app.modules.finalizaoseven.data.viewmodel.FinalizaOSevenVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackpatologiascomp"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <FrameLayout android:id="@+id/frameFinalizaoSev"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" style="@style/groupStylegreen_300">
+            <LinearLayout android:id="@+id/linearColumnprobabilidaded"
+                android:layout_gravity="top|start"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearColumnpatologiascomp"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylegray_1">
+                    <TextView android:id="@+id/txtPatologiasComp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_37pxh"
+                        android:layout_marginStart="@dimen/_37pxh"
+                        android:layout_marginTop="@dimen/_61pxv"
+                        android:layout_width="match_parent"
+                        android:text="@{finalizaOSevenVM.finalizaOSevenModel.txtPatologiasComp}"
+                        style="@style/txtMontserratextrabold38" tools:text="@string/msg_patologias_comp2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtCliqueparasab"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_39pxv"
+                        android:layout_marginEnd="@dimen/_38pxh"
+                        android:layout_marginStart="@dimen/_38pxh"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent"
+                        android:singleLine="true"
+                        android:text="@{finalizaOSevenVM.finalizaOSevenModel.txtCliqueparasab}"
+                        style="@style/txtMontserratmedium16_1" tools:text="@string/msg_clique_para_sab"/>
+                </LinearLayout>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtProbabilidaded"
+                    android:layout_gravity="start"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_67pxh"
+                    android:layout_marginStart="@dimen/_67pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{finalizaOSevenVM.finalizaOSevenModel.txtProbabilidaded}"
+                    style="@style/txtMontserratmedium16" tools:text="@string/msg_probabilidade_d"/>
+                <FrameLayout android:id="@+id/frameStackcandidiaseoral"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_202pxv"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="@dimen/_236pxh" style="@style/groupStyle">
+                    <ImageView android:id="@+id/imageCandidiaseoral"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_202pxh"
+                        android:layout_marginBottom="@dimen/_1pxv"
+                        android:layout_width="match_parent"
+                        android:scaleType="fitXY"
+                        cornerRadius="@{@dimen/_10pxh}"
+                        imageRes="@{@drawable/img_candidiaseoral}"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_candidiaseoral"/>
+                    <ImageView android:id="@+id/imageCANDIDASE"
+                        android:layout_gravity="top|end"
+                        android:layout_height="@dimen/_77pxh"
+                        android:layout_marginBottom="@dimen/_24pxv"
+                        android:layout_marginEnd="@dimen/_15pxh"
+                        android:layout_marginStart="@dimen/_15pxh"
+                        android:layout_marginTop="@dimen/_24pxv"
+                        android:layout_width="@dimen/_168pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_candidase"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_candidase"/>
+                </FrameLayout>
+                <LinearLayout android:gravity="start"
+                    android:id="@+id/linearRowprobabilidadedOne"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_21pxh"
+                    android:layout_marginStart="@dimen/_21pxh"
+                    android:layout_marginTop="@dimen/_19pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtProbabilidadedOne"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_2pxv"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{finalizaOSevenVM.finalizaOSevenModel.txtProbabilidadedOne}"
+                        style="@style/txtMontserratmedium12_1" tools:text="@string/msg_probabilidade_d2"/>
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtProbabilidadedTwo"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/_2pxv"
+                        android:layout_marginStart="@dimen/_36pxh"
+                        android:layout_weight="0.5"
+                        android:layout_width="0dp"
+                        android:singleLine="true"
+                        android:text="@{finalizaOSevenVM.finalizaOSevenModel.txtProbabilidadedTwo}"
+                        style="@style/txtMontserratmedium12_1" tools:text="@string/msg_probabilidade_d3"/>
+                </LinearLayout>
+                <LinearLayout android:id="@+id/linearRowcancerbucalone"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_17pxh"
+                    android:layout_marginStart="@dimen/_17pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_width="match_parent" android:orientation="horizontal">
+                    <FrameLayout android:id="@+id/frameCarcinoma"
+                        android:layout_height="@dimen/_131pxv"
+                        android:layout_width="@dimen/_153pxh" style="@style/groupStyle">
+                        <ImageView android:id="@+id/imageCancerbucalOne"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_131pxh"
+                            android:layout_width="@dimen/_153pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_10pxh}"
+                            imageRes="@{@drawable/img_cancerbucal1}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_cancerbucal1"/>
+                        <ImageView android:id="@+id/imageCARCINOMA"
+                            android:layout_gravity="top|end"
+                            android:layout_height="@dimen/_50pxh"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginEnd="@dimen/_11pxh"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="@dimen/_106pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_carcinoma"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_carcinoma"/>
+                    </FrameLayout>
+                    <FrameLayout android:id="@+id/frameMucocele"
+                        android:layout_height="@dimen/_131pxv"
+                        android:layout_marginStart="@dimen/_19pxh"
+                        android:layout_width="@dimen/_153pxh" style="@style/groupStyle">
+                        <ImageView android:id="@+id/imageOqueemucocel"
+                            android:layout_gravity="start"
+                            android:layout_height="@dimen/_131pxh"
+                            android:layout_width="@dimen/_153pxh"
+                            android:scaleType="fitXY"
+                            cornerRadius="@{@dimen/_10pxh}"
+                            imageRes="@{@drawable/img_oqueemucocel}"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_oqueemucocel"/>
+                        <ImageView android:id="@+id/imageMUCOCELE"
+                            android:layout_gravity="top|start"
+                            android:layout_height="@dimen/_50pxh"
+                            android:layout_marginBottom="@dimen/_14pxv"
+                            android:layout_marginEnd="@dimen/_11pxh"
+                            android:layout_marginStart="@dimen/_11pxh"
+                            android:layout_marginTop="@dimen/_14pxv"
+                            android:layout_width="@dimen/_103pxh"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/img_mucocele"
+                            tools:ignore="ContentDescription" tools:src="@drawable/img_mucocele"/>
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:backgroundTint="@color/gray_100"
+            android:id="@+id/floatingBtnFloatingactionbutton"
+            android:layout_gravity="bottom|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_139pxh"
+            android:layout_marginStart="@dimen/_139pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="wrap_content"
+            app:fabCustomSize="@dimen/_81pxh"
+            app:srcCompat="@drawable/img_checkmark_green_900" app:tint="@color/green_900"/>
+    </FrameLayout>
+</layout>

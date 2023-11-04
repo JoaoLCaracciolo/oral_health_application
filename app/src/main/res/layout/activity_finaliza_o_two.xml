@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="finalizaOTwoVM" type="com.oralhealthapplication.app.modules.finalizaotwo.data.viewmodel.FinalizaOTwoVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnconedeconfir"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_176pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegreen_300">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearFinalizaoTwo"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegreen_300">
+            <ImageView android:gravity="start"
+                android:id="@+id/imageConedeconfir"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:scaleType="fitXY"
+                imageRes="@{@drawable/img_conedeconfir_725x360}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_conedeconfir_725x360"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

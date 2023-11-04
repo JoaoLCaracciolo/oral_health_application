@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="questionRioVM" type="com.oralhealthapplication.app.modules.questionrio.data.viewmodel.QuestionRioVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnclose"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/_17pxh"
+        android:layout_marginStart="@dimen/_30pxh"
+        android:layout_marginTop="@dimen/_24pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegreen_300">
+        <LinearLayout android:id="@+id/linearQuestionrio"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="vertical" style="@style/groupStylegreen_300">
+            <ImageView android:id="@+id/imageClose"
+                android:layout_gravity="end"
+                android:layout_height="@dimen/_41pxh"
+                android:layout_marginStart="@dimen/_10pxh"
+                android:layout_width="@dimen/_41pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_close_gray_100"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_close_gray_100"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="start"
+                android:id="@+id/recyclerQuestionrio"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginTop="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_37pxh}" tools:itemCount="10" tools:listitem="@layout/row_question_rio"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnFinalizar"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_52pxh"
+                android:layout_marginStart="@dimen/_52pxh"
+                android:layout_marginTop="@dimen/_38pxv"
+                android:layout_width="match_parent"
+                android:paddingBottom="@dimen/_15pxv"
+                android:paddingEnd="@dimen/_24pxh"
+                android:paddingStart="@dimen/_24pxh"
+                android:paddingTop="@dimen/_15pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_finalizar"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline_1" tools:text="@string/lbl_finalizar"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

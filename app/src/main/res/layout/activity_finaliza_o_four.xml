@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <data>
+        <variable name="finalizaOFourVM" type="com.oralhealthapplication.app.modules.finalizaofour.data.viewmodel.FinalizaOFourVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearFinalizaoFou"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegreen_300">
+        <View
+            android:background="@drawable/rectangle_bg_gray_100_radius_151"
+            android:id="@+id/viewConedeconfir"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_302pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_29pxh"
+            android:layout_marginStart="@dimen/_29pxh"
+            android:layout_marginTop="@dimen/_334pxv" android:layout_width="@dimen/_302pxh"/>
+    </LinearLayout>
+</layout>

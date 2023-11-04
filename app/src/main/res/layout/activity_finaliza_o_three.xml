@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="finalizaOThreeVM" type="com.oralhealthapplication.app.modules.finalizaothree.data.viewmodel.FinalizaOThreeVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearFinalizaoThr"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegreen_300">
+        <ImageView android:gravity="start"
+            android:id="@+id/imageConedeconfir"
+            android:layout_height="@dimen/_377pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginTop="@dimen/_294pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_conedeconfir_377x360}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_conedeconfir_377x360"/>
+    </LinearLayout>
+</layout>

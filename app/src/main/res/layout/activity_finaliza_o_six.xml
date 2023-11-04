@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="finalizaOSixVM" type="com.oralhealthapplication.app.modules.finalizaosix.data.viewmodel.FinalizaOSixVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearFinalizaoSix"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylegreen_300">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtObrigadoAgora"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_250pxv"
+            android:layout_width="match_parent"
+            android:text="@{finalizaOSixVM.finalizaOSixModel.txtObrigadoAgora}"
+            style="@style/txtMontserratextrabold50" tools:text="@string/msg_obrigado_agora"/>
+        <FrameLayout android:id="@+id/frameCheck"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="@dimen/_122pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_36pxh"
+            android:layout_marginStart="@dimen/_36pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="@dimen/_122pxh" style="@style/groupStylegray_2">
+            <ImageView android:id="@+id/imageCheckmark"
+                android:layout_gravity="center"
+                android:layout_height="@dimen/_47pxh"
+                android:layout_marginBottom="@dimen/_20pxv"
+                android:layout_marginEnd="@dimen/_29pxh"
+                android:layout_marginStart="@dimen/_29pxh"
+                android:layout_marginTop="@dimen/_37pxv"
+                android:layout_width="@dimen/_63pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_checkmark_green_900"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_checkmark_green_900"/>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="listcancerbucaloneRowModel" type="com.oralhealthapplication.app.modules.historicodequestionario.data.model.ListcancerbucaloneRowModel"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackcancerbucalone"
+        android:layout_height="wrap_content" android:layout_width="@dimen/_153pxh">
+        <FrameLayout android:id="@+id/frameCarcinoma"
+            android:layout_gravity="bottom|start"
+            android:layout_height="@dimen/_131pxv"
+            android:layout_marginTop="@dimen/_10pxv"
+            android:layout_width="@dimen/_153pxh" style="@style/groupStyle">
+            <ImageView android:id="@+id/imageCancerbucalOne"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_131pxh"
+                android:layout_width="@dimen/_153pxh"
+                android:scaleType="fitXY"
+                cornerRadius="@{@dimen/_10pxh}"
+                imageRes="@{@drawable/img_cancerbucal1}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_cancerbucal1"/>
+            <ImageView android:id="@+id/imageCARCINOMA"
+                android:layout_gravity="top|end"
+                android:layout_height="@dimen/_50pxh"
+                android:layout_marginBottom="@dimen/_14pxv"
+                android:layout_marginEnd="@dimen/_17pxh"
+                android:layout_marginStart="@dimen/_17pxh"
+                android:layout_marginTop="@dimen/_14pxv"
+                android:layout_width="@dimen/_106pxh"
+                android:scaleType="fitXY"
+                android:src="@drawable/img_carcinoma"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_carcinoma"/>
+        </FrameLayout>
+        <TextView android:ellipsize="end" android:gravity="top|start"
+            android:id="@+id/txtProbabilidadedOne"
+            android:layout_gravity="top|center"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10pxv"
+            android:layout_marginEnd="@dimen/_8pxh"
+            android:layout_marginStart="@dimen/_8pxh"
+            android:layout_width="match_parent"
+            android:singleLine="true"
+            android:text="@{listcancerbucaloneRowModel.txtProbabilidadedOne}"
+            style="@style/txtMontserratmedium12_1" tools:text="@string/msg_probabilidade_d2"/>
+    </FrameLayout>
+</layout>

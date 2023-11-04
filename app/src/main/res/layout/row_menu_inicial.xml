@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="menuInicialRowModel" type="com.oralhealthapplication.app.modules.menuinicial.data.model.MenuInicialRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearAfta"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+        <FrameLayout android:id="@+id/frameProperty1Defa"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_131pxv"
+            android:layout_width="@dimen/_153pxh" style="@style/groupStylecornerRadius_2">
+            <ImageView android:id="@+id/imageAftabocaferid"
+                android:layout_gravity="start"
+                android:layout_height="@dimen/_131pxh"
+                android:layout_width="@dimen/_153pxh"
+                android:scaleType="fitXY" cornerRadius="@{@dimen/_5pxh}"
+                imageRes="@{@drawable/img_aftabocaferid}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_aftabocaferid"/>
+            <LinearLayout android:id="@+id/linearColumnafta"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_marginEnd="@dimen/_10pxh"
+                android:layout_marginStart="@dimen/_6pxh"
+                android:layout_marginTop="@dimen/_7pxv"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <TextView android:ellipsize="end" android:gravity="end"
+                    android:id="@+id/txtAFTA"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{menuInicialRowModel.txtAFTA}"
+                    style="@style/txtMontserratextrabold32" tools:text="@string/lbl_afta"/>
+                <FrameLayout android:id="@+id/frameStackstar"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_14pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_56pxv" android:layout_width="@dimen/_15pxh">
+                    <ImageView android:id="@+id/imageStar"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_width="@dimen/_15pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_star"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                    <ImageView android:id="@+id/imageStarOne"
+                        android:layout_gravity="start"
+                        android:layout_height="@dimen/_14pxh"
+                        android:layout_width="@dimen/_15pxh"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/img_star"
+                        tools:ignore="ContentDescription" tools:src="@drawable/img_star"/>
+                </FrameLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</layout>

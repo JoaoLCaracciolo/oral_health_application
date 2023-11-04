@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="historicoDeQuestionarioVM" type="com.oralhealthapplication.app.modules.historicodequestionario.data.viewmodel.HistoricoDeQuestionarioVM"/>
+    </data>
+    <androidx.core.widget.NestedScrollView android:clipToPadding="false"
+        android:fillViewport="true"
+        android:id="@+id/scrollViewScrollview"
+        android:layout_height="match_parent" android:layout_width="match_parent">
+        <LinearLayout android:gravity="center_horizontal"
+            android:id="@+id/linearColumnprobabilidaded"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent" android:orientation="vertical">
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListsentedoraoma"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_37pxh}" tools:itemCount="5" tools:listitem="@layout/row_listsentedoraoma"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListlnguascompla"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_20pxv"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="vertical"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_37pxh}" tools:itemCount="4" tools:listitem="@layout/row_listlnguascompla"/>
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearColumnpatologiascomp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_24pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_1">
+                <TextView android:gravity="end"
+                    android:id="@+id/txtPatologiasComp"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/_60pxv"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginStart="@dimen/_53pxh"
+                    android:layout_marginTop="@dimen/_61pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{historicoDeQuestionarioVM.historicoDeQuestionarioModel.txtPatologiasComp}"
+                    style="@style/txtMontserratextrabold38" tools:text="@string/msg_patologias_comp"/>
+            </LinearLayout>
+            <TextView android:ellipsize="end" android:gravity="end"
+                android:id="@+id/txtProbabilidaded"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_73pxh"
+                android:layout_marginStart="@dimen/_73pxh"
+                android:layout_marginTop="@dimen/_15pxv"
+                android:layout_width="match_parent"
+                android:singleLine="true"
+                android:text="@{historicoDeQuestionarioVM.historicoDeQuestionarioModel.txtProbabilidaded}"
+                style="@style/txtMontserratmedium16" tools:text="@string/msg_probabilidade_d"/>
+            <FrameLayout android:id="@+id/frameStackcandidiaseoral"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_202pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_4pxv"
+                android:layout_width="@dimen/_236pxh" style="@style/groupStyle">
+                <ImageView android:id="@+id/imageCandidiaseoral"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_202pxh"
+                    android:layout_marginBottom="@dimen/_1pxv"
+                    android:layout_width="match_parent"
+                    android:scaleType="fitXY"
+                    cornerRadius="@{@dimen/_10pxh}"
+                    imageRes="@{@drawable/img_candidiaseoral}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_candidiaseoral"/>
+                <ImageView android:id="@+id/imageCANDIDASE"
+                    android:layout_gravity="top|end"
+                    android:layout_height="@dimen/_77pxh"
+                    android:layout_marginBottom="@dimen/_24pxv"
+                    android:layout_marginEnd="@dimen/_15pxh"
+                    android:layout_marginStart="@dimen/_15pxh"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="@dimen/_168pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_candidase"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_candidase"/>
+            </FrameLayout>
+            <androidx.recyclerview.widget.RecyclerView
+                android:gravity="center_horizontal"
+                android:id="@+id/recyclerListcancerbucalone"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_46pxv"
+                android:layout_width="match_parent"
+                android:nestedScrollingEnabled="false"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                itemSpace="@{@dimen/_19pxh}" tools:itemCount="2" tools:listitem="@layout/row_listcancerbucalone"/>
+            <androidx.appcompat.widget.AppCompatButton
+                android:ellipsize="end" android:gravity="center"
+                android:id="@+id/btnFechar"
+                android:layout_gravity="center_horizontal"
+                android:layout_height="@dimen/_45pxv"
+                android:layout_marginEnd="@dimen/_16pxh"
+                android:layout_marginStart="@dimen/_16pxh"
+                android:layout_marginTop="@dimen/_71pxv"
+                android:layout_width="@dimen/_200pxh"
+                android:paddingBottom="@dimen/_14pxv"
+                android:paddingEnd="@dimen/_30pxh"
+                android:paddingStart="@dimen/_30pxh"
+                android:paddingTop="@dimen/_14pxv"
+                android:singleLine="true"
+                android:text="@string/lbl_fechar"
+                android:textAllCaps="false"
+                style="@style/btnSolidRoundedOutline_6" tools:text="@string/lbl_fechar"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</layout>

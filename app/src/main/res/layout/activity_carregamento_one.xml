@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="carregamentoOneVM" type="com.oralhealthapplication.app.modules.carregamentoone.data.viewmodel.CarregamentoOneVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCarregamentoOn"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegreen_900">
+        <ImageView android:id="@+id/imagePranchetaFiftyOne"
+            android:layout_gravity="start"
+            android:layout_height="@dimen/_229pxv"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_prancheta51}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_prancheta51"/>
+    </FrameLayout>
+</layout>

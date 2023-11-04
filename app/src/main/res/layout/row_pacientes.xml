@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="pacientesRowModel" type="com.oralhealthapplication.app.modules.pacientes.data.model.PacientesRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearMirelleSantos"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecornerRadius_1">
+        <LinearLayout android:gravity="start"
+            android:id="@+id/linearProperty1Me"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:orientation="horizontal" style="@style/groupStylegreen_1">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearColumnmirellesantos"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_22pxv"
+                android:layout_marginStart="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_weight="0.72" android:layout_width="0dp" android:orientation="vertical">
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtMirelleSantos"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{pacientesRowModel.txtMirelleSantos}"
+                    style="@style/txtMontserratbold24" tools:text="@string/lbl_mirelle_santos"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtPacienteInfant"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_1pxv"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{pacientesRowModel.txtPacienteInfant}"
+                    style="@style/txtMontserratmedium11" tools:text="@string/msg_paciente_infant"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtAnosCounter"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@{pacientesRowModel.txtAnosCounter}"
+                    style="@style/txtMontserratmedium11" tools:text="@string/lbl_12_anos"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtUltimoatendime"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_14pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{pacientesRowModel.txtUltimoatendime}"
+                    style="@style/txtMontserratmedium11_1" tools:text="@string/msg_ultimo_atendime"/>
+            </LinearLayout>
+            <ImageView android:id="@+id/imageEllipseThirteen"
+                android:layout_height="@dimen/_78pxh"
+                android:layout_marginBottom="@dimen/_22pxv"
+                android:layout_marginEnd="@dimen/_23pxh"
+                android:layout_marginTop="@dimen/_22pxv"
+                android:layout_width="@dimen/_78pxh"
+                android:scaleType="centerCrop" circular="@{true}"
+                imageRes="@{@drawable/img_ellipse13}"
+                tools:ignore="ContentDescription" tools:src="@drawable/img_ellipse13"/>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="comorbidadesPaciente1VM" type="com.oralhealthapplication.app.modules.comorbidadespaciente1.data.viewmodel.ComorbidadesPaciente1VM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameStackarrowleft"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegray_100">
+        <ImageView android:id="@+id/imageImagemodonto"
+            android:layout_gravity="start"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:scaleType="fitXY"
+            imageRes="@{@drawable/img_imagemodonto}"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_imagemodonto"/>
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_gravity="start" android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/_25pxv"
+            android:layout_marginEnd="@dimen/_16pxh"
+            android:layout_marginStart="@dimen/_16pxh"
+            android:layout_marginTop="@dimen/_25pxv"
+            android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:id="@+id/linearColumnarrowleft"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageArrowleft"
+                    android:layout_gravity="start"
+                    android:layout_height="@dimen/_41pxh"
+                    android:layout_marginEnd="@dimen/_10pxh"
+                    android:layout_width="@dimen/_41pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowleft"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowleft"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearQuestionrio"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_10pxv"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical" style="@style/groupStylecornerRadius_4">
+                    <LinearLayout android:gravity="center_horizontal"
+                        android:id="@+id/linearColumnpacientegestan"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/_1pxv"
+                        android:layout_width="match_parent"
+                        android:orientation="vertical" style="@style/groupStylecornerRadius_4">
+                        <TextView android:ellipsize="end"
+                            android:gravity="center_horizontal"
+                            android:id="@+id/txtPacientegestan"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/_48pxh"
+                            android:layout_marginStart="@dimen/_48pxh"
+                            android:layout_width="match_parent"
+                            android:singleLine="true"
+                            android:text="@{comorbidadesPaciente1VM.comorbidadesPaciente1Model.txtPacientegestan}"
+                            style="@style/txtMontserratsemibold20_1" tools:text="@string/msg_paciente_gestan"/>
+                        <com.google.android.material.tabs.TabLayout
+                            android:gravity="start"
+                            android:id="@+id/tabLayoutGroup6"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/_23pxv"
+                            android:layout_width="match_parent"
+                            app:tabBackground="@drawable/selector_bg_green_900_radius_16"
+                            app:tabIndicatorColor="@android:color/transparent"
+                            app:tabIndicatorHeight="0dp"
+                            app:tabMode="fixed"
+                            app:tabSelectedTextColor="@color/black_904"
+                            app:tabTextColor="@color/black_904" style="@style/groupStylecornerRadius_4"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <androidx.viewpager2.widget.ViewPager2
+                    android:gravity="end"
+                    android:id="@+id/viewPagerViewpager"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10pxh"
+                    android:layout_marginTop="@dimen/_37pxv"
+                    android:layout_weight="1" android:layout_width="match_parent"/>
+            </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</layout>

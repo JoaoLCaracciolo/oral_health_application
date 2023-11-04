@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="carregamentoTwoVM" type="com.oralhealthapplication.app.modules.carregamentotwo.data.viewmodel.CarregamentoTwoVM"/>
+    </data>
+    <FrameLayout android:id="@+id/frameCarregamentoTw"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent" style="@style/groupStylegreen_900">
+        <ImageView android:id="@+id/imageVector"
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_108pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_40pxh"
+            android:layout_marginStart="@dimen/_40pxh"
+            android:layout_marginTop="@dimen/_40pxv"
+            android:layout_width="@dimen/_108pxh"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_vector_green_200_108x108"
+            tools:ignore="ContentDescription" tools:src="@drawable/img_vector_green_200_108x108"/>
+    </FrameLayout>
+</layout>

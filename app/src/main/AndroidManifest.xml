@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest package="com.oralhealthapplication.app" xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <application android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" android:largeHeap="true"
+        android:name="com.oralhealthapplication.app.appcomponents.di.MyApp"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true" android:theme="@style/Theme.MyApp" android:usesCleartextTraffic="true">
+        <activity
+            android:name="com.oralhealthapplication.app.modules.telainicialtwo.ui.TelaInicialTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.carregamentofive.ui.CarregamentoFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.carregamentotwo.ui.CarregamentoTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.pginamucocele.ui.PGinaMucoceleActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.telacadastropaciente.ui.TelaCadastroPacienteActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.meusdadosmudar.ui.MeusDadosMudarActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.finalizaoone.ui.FinalizaOOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.carregamento.ui.CarregamentoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.meusdadosnovasenha.ui.MeusDadosNovaSenhaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.comorbidadespaciente1.ui.ComorbidadesPaciente1Activity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.finalizaothree.ui.FinalizaOThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.questionrio.ui.QuestionRioActivity" android:screenOrientation="portrait"/>
+        <activity android:exported="true"
+            android:name="com.oralhealthapplication.app.modules.carregamentoone.ui.CarregamentoOneActivity" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.finalizaoseven.ui.FinalizaOSevenActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.cadastropacientetwo.ui.CadastroPacienteTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.meusdados.ui.MeusDadosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.pacientes.ui.PacientesActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.novasenha.ui.NovaSenhaActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.menuinicial.ui.MenuInicialActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.pacientemirelle.ui.PacienteMirelleActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.chamadaquestionrio.ui.ChamadaQuestionRioActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.telacadastrodr.ui.TelaCadastroDrActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.telalogindr.ui.TelaLoginDrActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.finalizaotwo.ui.FinalizaOTwoActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.pacienteeditar.ui.PacienteEditarActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.finalizaofive.ui.FinalizaOFiveActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.favoritos.ui.FavoritosActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.telainicialone.ui.TelaInicialOneActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.finalizaofour.ui.FinalizaOFourActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.finalizaosix.ui.FinalizaOSixActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.carregamentothree.ui.CarregamentoThreeActivity" android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.oralhealthapplication.app.modules.carregamentofour.ui.CarregamentoFourActivity" android:screenOrientation="portrait"/>
+    </application>
+</manifest>
