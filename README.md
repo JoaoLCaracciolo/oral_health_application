@@ -42,7 +42,7 @@ Check your app\'s UI from the AppNavigation screens of your app.
 ### Package Structure
 
 
-```sql
+```xml
 ├── appcomponents       
 │ ├── di                 - Dependency Injection Components 
 │ │ └── MyApp.kt
